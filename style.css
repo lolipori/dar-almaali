@@ -1,0 +1,178 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body{
+    background: url(imgs/downloaohl.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items:center ;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-family:Cairo,arial;
+    font-size: 20px;
+}
+
+li a::after{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: greenyellow;
+    display: block;
+    transition: all .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 180px;
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 80px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    align-items: center;
+}
+.d1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 300px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 6px;
+}
+.d2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 300px;
+    border-radius: 9px;
+    box-shadow: 3px 3px 5px;
+}
+.d3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 300px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 6px ;
+}
+.ggg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:48px;
+    width: 158px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family:Cairo,arial;
+}
+.ggg:hover{
+    background-color: greenyellow;
+    border-color: black;
+    color: black;
+}
+.ggg:active{
+    border-color: white;
+    background: transparent;
+    color: white; 
+}
+.vie{
+    text-decoration: none;
+}
+h1{
+    display: flex;
+    font-family:Cairo,arial; 
+    color: white;
+    text-decoration-thickness: 7px;
+    font-size: 120px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+}
+p{
+    font-family:Cairo,arial;
+    font-size: 16px;
+    text-align: center;
+}
+h2{
+    font-family:Cairo,arial;
+    font-size: 40px;
+}
+.helo{
+    height:48px;
+    width: 158px;
+    background-color: greenyellow;
+    font-family:Cairo,arial;
+    font-size: 15px;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+    border-style: solid;
+}
+.helo:hover{
+    background-color: white;
+    color: greenyellow;
+    border-color: green;
+}
+.dqd{
+    display: flex;
+    font-size: 20px;
+    font-family:Cairo,arial;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    line-height: 50px;
+    width: 620px;
+}
+.img1{
+    display: flex;
+    border-radius: 20px;
+    width: 550px;
+    height: 550px;
+}

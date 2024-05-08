@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+<style>
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body{
+    background: url(imgs/downloaohl.jpg);
+    background-repeat: no-repeat;
+    height: 750px;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items:center ;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-family:Cairo,arial;
+    font-size: 20px;
+}
+
+li a::after{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: greenyellow;
+    display: block;
+    transition: all .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 180px;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    height: 60%;
+    cursor: pointer;
+    font-size: 28px;
+    font-family:Cairo,arial;
+    width: 30%;
+    transition: 0.4s;
+}
+input[type=submit]:hover{
+   background-color: darkred;
+   color: whitesmoke; 
+} 
+.box{
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 58%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 70%;
+}
+main{
+    height: 100%;
+}  
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                </li><li><a href="index.html">الرئيسية</a></li>
+                <li><a href="chose.html">تسجيل</a></li>
+                <li><a href="#">متجر</a>
+                <li><a href="#">تواصل</a></li>
+            </ul>
+        </nav> 
+       </header>
+    <main>
+        <div class="container">
+                <div class="box">
+                    <input type="submit" value="استاذ" onclick="document.location='Sign-in.html'">
+                    <input type="submit" value="تلميذ" onclick="document.location='Sign-in.html'">
+                    <input type="submit" value="ولي امر" onclick="document.location='Sign-in.html'">
+                </div>   
+        </div>
+    </main>  
+    <php
+    if(isset($_GET['error'])){
+        
+    }
+     
+</body>
+</html>
