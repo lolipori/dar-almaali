@@ -86,7 +86,22 @@ input[type=submit]:hover{
 }
 main{
     height: 100%;
-}  
+} 
+@media(max-width:990px){
+    .box{
+        width: 50%;
+        height: 40%; 
+    }
+    .container{
+        height: 80%;
+        width: 70%;
+    }
+    input[type=submit]{
+        padding: 5px 10px; 
+        height: 40%;
+        width: 40%;
+    }
+}
 </style>
 </head>
 <body>
@@ -108,11 +123,6 @@ main{
                     <input type="submit" value="ولي امر" onclick="document.location='Sign-in.html'">
                 </div>   
         </div>
-    </main>  
-    <php
-    if(isset($_GET['error'])){
-        
-    }
-     
+    </main>
 </body>
 </html>

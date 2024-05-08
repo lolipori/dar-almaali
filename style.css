@@ -176,3 +176,40 @@ h2{
     width: 550px;
     height: 550px;
 }
+@media(max-width: 300px){
+    header{
+        height: 50px; 
+    }
+    ul li a{
+        font-size: 15px;
+    }
+    main{
+        row-gap: 80px;
+    }
+    .lower{
+        flex-direction: column;
+        column-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 50px;
+    }
+    html{
+        width: 650px;
+    }
+    body{
+        width: 100%;
+    }
+    .about{
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .dqd{
+        font-size: 15px;
+        line-height: 30px;
+        width: 590px;
+    }
+    .img1{
+        display: none;
+    }
+}
