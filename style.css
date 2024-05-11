@@ -4,9 +4,17 @@ margin: 0px;
 box-sizing: border-box;
 }
 body{
-    background: url(imgs/downloaohl.jpg);
+    background: url(imgs/downloaohl-.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    background-color:#391926;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family:Cairo,arial;
+    font-size: 20px; 
 }
 header{
     display: flex;
@@ -59,8 +67,22 @@ main{
 .about{
     display: flex;
     flex-direction: row;
-    column-gap: 90px;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+}
+.t{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+.i{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px; 
+    margin-bottom: 50px;
 }
 .d1{
     display: flex;
@@ -169,6 +191,12 @@ h2{
     transition: 0.3s;
     line-height: 50px;
     width: 620px;
+    justify-self: center;
+}
+.td{
+    display: flex;
+    width: 90%;
+    justify-content: center;
 }
 .img1{
     display: flex;
@@ -176,11 +204,89 @@ h2{
     width: 550px;
     height: 550px;
 }
+.map-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 404px;
+    border-top-left-radius: 20px;
+}
+.map-con p{
+    font-size: 30px;
+    color: greenyellow;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 404px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 404px;
+    border-top-right-radius: 20px;
+}
+iframe{
+    border-radius: 10px;
+    height: 324px;
+    left: 0%;
+    margin-left: 20px;
+}
+.talk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    flex-direction: row;
+}
+.cont p{
+    font-size: 50px;
+}
+.cont a{
+    font-size: 30px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+.cont .talk a{
+    font-size: 50px;
+    color: lightblue;
+}
+.img2{
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 300px){
+    .dqd{
+        display: none;
+    } 
+}
 @media(max-width: 600px){
     header{
-        height: 50px; 
+        height: 100px;
         justify-content: center;
-        align-items: center;
     }
     ul li a{
         font-size: 15px;
@@ -197,12 +303,14 @@ h2{
         row-gap: 50px;
     }
     html{
-        width: 650px;
+        width: 600px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     body{
-        width: 100%;
+        width:100%;
+        min-width: 0px;
     }
     .about{
         flex-direction: column;
@@ -211,12 +319,88 @@ h2{
     .dqd{
         font-size: 15px;
         line-height: 30px;
-        width: 400px;
+        width: 500px;
+        min-width: 0px;
     }
     .img1{
         display: none;
     }
     h1{
-        font-size:50px;
+        font-size: 50px;
+        width: 100%;
+    }
+    .cont p{
+        font-size: 30px;
+    }
+    .cont a{
+        font-size: 30px;
+        color: greenyellow;
+        margin-bottom: 10px;
+    }
+    .cont .talk a{
+        font-size: 30px;
+        color: lightblue;
+    }
+    .cont p{
+        font-size: 30px;
+    }
+}
+@media(max-width: 1080px){
+    header{
+        height: 100px;
+        justify-content: center;
+    }
+    ul li a{
+        font-size: 15px;
+    }
+    main{
+        row-gap: 80px;
+    }
+    .lower{
+        flex-direction: column;
+        column-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 50px;
+    }
+    html{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        width:100%;
+        min-width: 0px;
+    }
+    .about{
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .dqd{
+        font-size: 15px;
+        line-height: 30px;
+        width: 500px;
+        min-width: 0px;
+    }
+    .img1{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .cont .talk a{
+        font-size: 15px;
+        color: lightblue;
+    }
+    .cont a{
+        font-size: 20px;
+        color: greenyellow;
+        margin-bottom: 15px;
+    }
+    .cont p{
+        font-size: 30px;
     }
 }
