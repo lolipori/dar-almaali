@@ -3,6 +3,9 @@ padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: url(imgs/downloaohl-.jpg);
     background-repeat: no-repeat;
