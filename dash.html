@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(imgs/downloaohl-.jpg);
+            background-color:#391926;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 750px;
+        }
+        header{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items:center ;
+}
+
+.gv ul{
+    display: flex;
+    list-style: none;
+}
+.gv ul li a{
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-family:Cairo,arial;
+    font-size: 20px;
+}
+
+.gv li a::after{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: greenyellow;
+    display: block;
+    transition: all .5s;
+}
+.gv li a:hover::after{
+    width: 100%;
+}
+.bl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width:200px;
+    height: 100px;
+}
+.bl:hover{
+    width: 20%;
+    .bl nav{
+        display: flex;
+    }
+}
+.bl nav{
+    display: none;
+    justify-content: center;
+    align-items: center;  
+}
+.bl nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+    font-family:Cairo,arial;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="gv">
+            <ul>
+                </li><li><a href="index.html">الرئيسية</a></li>
+                <li><a href="chose.html">تسجيل</a></li>
+                <li><a href="Store.html">متجر</a>
+                <li><a href="index.html">تواصل</a></li>
+                <li><a href="pan.html">السلة</a></li>
+            </ul>
+        </nav> 
+       </header>
+
+       <main>
+            <div class="bl">
+                <nav>
+                    <ul>
+                        </li><li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="chose.html">تسجيل</a></li>
+                        <li><a href="Store.html">متجر</a>
+                        <li><a href="index.html">تواصل</a></li>
+                        <li><a href="pan.html">السلة</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+       </main>
+</body>
+</html>

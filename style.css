@@ -359,10 +359,10 @@ iframe{
         width: 100%;
     }
     .img2{
-        width: 300px;
+        width: 400px;
     }
     .dqd{
-        width: 300px;
+        width: 400px;
     }
     .map-con{
         display: none;
@@ -372,3 +372,22 @@ iframe{
         border-top-left-radius: 20px;
     }
 }
+@media (max-width: 399px){
+    
+    .img2{
+        width: 300px;
+    }
+    .dqd{
+        width: 300px;
+    }
+    .d1{
+        width: 290px;
+    }
+    .d2{
+        width: 290px;
+    }
+    .d3{
+        width: 290px;
+    }
+}
+

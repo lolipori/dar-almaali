@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Document</title>
+    <link rel="shortcut icon" href="123.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,20 +163,22 @@
             <div class="hh">
                 <h1><b>انشأ حساب</b></h1>
             </div>
-            <div class="content">  
-                <div class="text">
-                    <label>الاسم</label>
-                    <input type="text" class="name">
-                    <label>الايمايل</label>
-                    <input type="text" class="email">
-                    <label>كلمة السر</label>
-                    <input type="password" class="pass">
-                </div>
-                <div class="btn">
-                    <input type="submit" value="Sign-In" onclick="document.location='index.html'">   
-                </div>
-                <p><a href="Sign-in.html">سجل الدخول</a>لديك حساب؟</p>
-            </div>    
+              <form action="connect.php" method="post">
+                <div class="content" >  
+                    <div class="text">
+                        <label>الاسم</label>
+                        <input type="text" class="name" name="username">
+                        <label>الايمايل</label>
+                        <input type="text" class="email" name="email">
+                        <label>كلمة السر</label>
+                        <input type="password" class="pass" name="password">
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="Sign-In" onclick="document.location='index.html'">   
+                    </div>
+                    <p>لديك حساب؟<a href="Sign-in.html">سجل الدخول</a></p>
+                </div>  
+              </form>
         </div>
         
     </div> 
