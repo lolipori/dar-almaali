@@ -280,13 +280,7 @@ iframe{
 
 
 
-
-@media(max-width: 300px){
-    .dqd{
-        display: none;
-    } 
-}
-@media(max-width: 600px){
+@media(max-width: 1080px){
     header{
         height: 100px;
         justify-content: center;
@@ -301,12 +295,13 @@ iframe{
         flex-direction: column;
         column-gap: 30px;
         justify-content: center;
+        margin: 15px 0px 15px;
         align-items: center;
         width: 100%;
         row-gap: 50px;
     }
     html{
-        width: 600px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -316,8 +311,9 @@ iframe{
         min-width: 0px;
     }
     .about{
-        flex-direction: column;
-        column-gap: 0px;
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 100%;
     }
     .dqd{
         font-size: 15px;
@@ -347,63 +343,32 @@ iframe{
     .cont p{
         font-size: 30px;
     }
+    iframe{
+        margin-left: 200px;
+    }
 }
-@media(max-width: 1080px){
-    header{
-        height: 100px;
-        justify-content: center;
-    }
-    ul li a{
-        font-size: 15px;
-    }
-    main{
-        row-gap: 80px;
-    }
-    .lower{
-        flex-direction: column;
-        column-gap: 30px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        row-gap: 50px;
-    }
-    html{
-        width: 600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    body{
-        width:100%;
-        min-width: 0px;
-    }
+
+@media (max-width: 400px){
     .about{
-        flex-direction: column;
-        column-gap: 0px;
+        width: 100%;
+    }
+    .i{
+        width: 200px;
+    }
+    .td{
+        width: 100%;
+    }
+    .img2{
+        width: 300px;
     }
     .dqd{
-        font-size: 15px;
-        line-height: 30px;
-        width: 500px;
-        min-width: 0px;
+        width: 300px;
     }
-    .img1{
+    .map-con{
         display: none;
     }
-    h1{
-        font-size: 40px;
+    .cont{
         width: 100%;
-    }
-    .cont .talk a{
-        font-size: 15px;
-        color: lightblue;
-    }
-    .cont a{
-        font-size: 20px;
-        color: greenyellow;
-        margin-bottom: 15px;
-    }
-    .cont p{
-        font-size: 30px;
+        border-top-left-radius: 20px;
     }
 }
