@@ -348,7 +348,7 @@ iframe{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 533px){
     .about{
         width: 100%;
     }
